@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CodeVirtualZ</title>
+  <meta name="description" content="Portfolio — .NET, Web, Windows apps, Reverse Engineering" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.png" />
+</head>
+<body class="light-only">
+  <header class="site-header">
+    <a href="#" class="logo"><span class="logo-mark">&lt;/&gt;</span> CodeVirtualZ</a>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Animated decorative blobs -->
+  <svg class="blobs" width="100%" height="100%" viewBox="0 0 800 600" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.30"/>
+        <stop offset="100%" stop-color="#00A2FF" stop-opacity="0.20"/>
+      </linearGradient>
+    </defs>
+    <circle cx="10%" cy="10%" r="180" fill="url(#g1)" class="float a"/>
+    <circle cx="90%" cy="15%" r="140" fill="url(#g1)" class="float b"/>
+    <circle cx="80%" cy="75%" r="180" fill="url(#g1)" class="float c"/>
+    <circle cx="20%" cy="85%" r="140" fill="url(#g1)" class="float d"/>
+  </svg>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-inner">
+        <h1><span class="underline">Full‑stack .NET Developer</span></h1>
+        <p class="subtitle">
+          Building <strong>ASP.NET web apps</strong> & <strong>Windows desktop apps</strong>.
+          Passionate about <strong>Reverse Engineering</strong> & system internals.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary sheen" href="#projects">View Projects</a>
+          <a class="btn outline" href="#contact">Contact</a>
+        </div>
+
+        <!-- Core skills grouped -->
+        <div id="skills" class="badges" role="list" aria-label="Core skills">
+          <div class="badge-group">
+  <span class="badge-title">Backend</span><span role="listitem" class="tech dotnet">.NET</span><span role="listitem" class="tech aspnet">ASP.NET Core</span><span role="listitem" class="tech csharp">C#</span><span role="listitem" class="tech ef">Entity Framework</span>
+</div>
+          <div class="badge-group">
+  <span class="badge-title">Desktop</span><span role="listitem" class="tech winforms">WinForms</span><span role="listitem" class="tech wpf">WPF</span>
+</div>
+          <div class="badge-group">
+  <span class="badge-title">Frontend</span><span role="listitem" class="tech angular">Angular</span><span role="listitem" class="tech ts">TypeScript</span><span role="listitem" class="tech js">JavaScript</span><span role="listitem" class="tech html">HTML</span><span role="listitem" class="tech css">CSS</span><span role="listitem" class="tech bootstrap">Bootstrap</span>
+</div>
+          <div class="badge-group">
+  <span class="badge-title">Database</span><span role="listitem" class="tech sqlserver">SQL Server</span><span role="listitem" class="tech mysql">MySQL</span>
+</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        I work as a full‑stack developer focused on the .NET ecosystem — both web (ASP.NET) and Windows apps (WinForms/WPF).<br>
+        I enjoy exploring how software works under the hood (Reverse Engineering) and tuning systems for performance.
+      </p>
+      <ul class="highlights">
+        <li>API & Database design (SQL Server / MySQL) with CI/CD on GitHub Actions</li>
+        <li>Hands‑on projects that solve real problems, with clear docs/READMEs</li>
+        <li>Interests: Security, Performance, Observability</li>
+      </ul>
+    </section>
+
+    <section id="other-tools" class="section">
+      <h2>Other Tools / Familiar With</h2>
+      <div class="badges muted">
+        <span>phpMyAdmin</span><span>jQuery</span><span>Pug</span><span>Node.js</span><span>Git</span><span>GitHub</span><span>Postman</span><span>Visual Studio</span><span>Sublime</span><span>Windows</span><span>Discord.js</span>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="card-grad"></div>
+          <h3>Performance Evaluation System</h3>
+          <p>Enterprise evaluation platform (ASP.NET Core + Angular + SQL Server) with SSO, role‑based access, and reporting.</p>
+          <div class="meta"><span>ASP.NET</span><span>Angular</span><span>SQL Server</span></div>
+          <a class="btn small" href="#" target="_blank" rel="noopener">Repo / Demo</a>
+        </article>
+        <article class="card">
+          <div class="card-grad"></div>
+          <h3>Desktop Utilities</h3>
+          <p>Small Windows tools (WinForms/WPF): data converters, log/CPU monitors, and notification helpers.</p>
+          <div class="meta"><span>WinForms</span><span>WPF</span></div>
+          <a class="btn small" href="#" target="_blank" rel="noopener">Repo / Demo</a>
+        </article>
+        <article class="card">
+          <div class="card-grad"></div>
+          <h3>RE Learning Notes</h3>
+          <p>Safe & legal Reverse Engineering notes (static docs): concepts, toolchains, techniques, and cautions.</p>
+          <div class="meta"><span>Reverse Engineering</span><span>Docs</span></div>
+          <a class="btn small" href="#" target="_blank" rel="noopener">Repo / Demo</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Open to collaboration & interesting projects.</p>
+      <ul class="contact-list">
+        <li>📧 <a href="mailto:ta.kittanan@gmail.com">ta.kittanan@gmail.com</a></li>
+        <li>🐙 <a href="https://github.com/CodeVirtualZ" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> CodeVirtualZ — Hosted on GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
